@@ -15,13 +15,13 @@ The application reads a data file containing Bitcoin records, processes each rec
 
 ## Prerequisites
 
-- Java 11 or later
+- Java 17
 - Maven 3.6+
-- A relational database (H2/MySQL/Postgres). The project is configured to use the datasource in `src/main/resources/application.yml` or `application.properties`.
+- A relational database (MySQL). The project is configured to use the datasource in `src/main/resources/application.properties`.
 
 ## Configuration
 
-Update the datasource and job properties in `src/main/resources/application.yml` (or `application.properties`):
+Update the datasource and job properties in `src/main/resources/application.properties:
 
 - `spring.datasource.url`, `spring.datasource.username`, `spring.datasource.password` — database connection
 - `batch.input-file` — path to the input file (e.g. `classpath:bitcoin.csv` or an absolute path)
